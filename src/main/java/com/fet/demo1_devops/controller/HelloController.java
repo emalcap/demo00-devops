@@ -18,4 +18,10 @@ public class HelloController {
         return json;
 
     }
+
+    @GetMapping
+    public String saludar() {
+        return "¡Hola desde el controlador Spring Boot!";
+    }
+
 }
