@@ -10,7 +10,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/app/")
 public class HelloController {
-
+//"Proyecto gestionado por Palomino"
     @GetMapping("/Map/String")
     public Map<String, String> foot() {
         Map<String, String> json = new HashMap<>();
