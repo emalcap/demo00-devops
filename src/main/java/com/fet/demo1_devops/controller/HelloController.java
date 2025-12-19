@@ -1,0 +1,21 @@
+package com.fet.demo1_devops.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@RestController
+@RequestMapping("/app/")
+public class HelloController {
+
+    @GetMapping("/Map/String")
+    public Map<String, String> foot() {
+        Map<String, String> json = new HashMap<>();
+        json.put("message", "Sprint Boot api rest");
+        return json;
+
+    }
+}
