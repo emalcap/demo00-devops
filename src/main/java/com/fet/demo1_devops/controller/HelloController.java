@@ -23,5 +23,14 @@ public class HelloController {
     public String saludar() {
         return "¡Hola desde el controlador Spring Boot!";
     }
-
+    @GetMapping("/paises")
+    public Map<String, String> getPaises() {
+        Map<String, String> paises = new HashMap<>();
+        paises.put("PE", "Perú");
+        paises.put("MX", "México");
+        paises.put("AR", "Argentina");
+        paises.put("CL", "Chile");
+        paises.put("US", "Estados Unidos");
+        return paises;
+    }
 }
